@@ -1,0 +1,57 @@
+modLoader = "javafml"
+loaderVersion = "${loader_version_range}"
+license = "${mod_license}"
+
+#issueTrackerURL="https://change.me.to.your.issue.tracker.example.invalid/" #optional
+
+[[mods]]
+modId = "${mod_id}"
+version = "${mod_version}"
+displayName = "${mod_name}"
+#displayURL=""
+#logoFile=""
+credits="Thanks for downloading my Mod"
+authors = "${mod_authors}"
+description = '''
+XOres adds a few new Ores and Tools
+Ores:
+ - Jade
+ - Saphire
+ - Limonite
+ - Enderite
+ 
+Tools:
+ - Jade
+ - Saphire
+ - Limonite
+ - Enderite
+ - Blazing
+ - Rose Quartz
+ - Steel
+ - Night
+
+Have a lot of fun when playing
+XOres Development Team
+'''
+
+#[[mixins]]
+#config="${mod_id}.mixins.json"
+
+# The [[accessTransformers]] block allows you to declare where your AT file is.
+# If this block is omitted, a fallback attempt will be made to load an AT from META-INF/accesstransformer.cfg
+#[[accessTransformers]]
+#file="META-INF/accesstransformer.cfg"
+
+[[dependencies.${mod_id}]] #optional
+modId = "neoforge"
+type = "required"
+versionRange = "${neo_version_range}"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.${mod_id}]]
+modId = "minecraft"
+type = "required"
+versionRange = "${minecraft_version_range}"
+ordering = "NONE"
+side = "BOTH"
